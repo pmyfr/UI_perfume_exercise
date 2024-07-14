@@ -136,11 +136,64 @@ table {
 }
 
 body {
-  font-family: '蘋方-繁', 'SF Pro Text', serif;
+  font-family: "蘋方-繁", "SF Pro Text", serif;
   font-size: 16px;
   color: black;
+  line-height: 1.5;
+}
+
+nav ul {
+ 
 }
 
 .header {
-  background-image: url("https://images.unsplash.com/photo-1588159343745-445ae0b16383?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 870px;
+  background-image: url('img/lckpz2vk.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: transparent url('img/lckpz2vk.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  color: white;
+  position: relative;
+}
+
+.header-description {
+  width: calc(50% - 110px);
+  margin-left: auto;
+  text-align: left;
+  letter-spacing: 0px;
+  font-size: 24px;
+  /* position: absolute; */
+  top: 295px;
+  right: 405px;
+}
+
+.header button {
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid hsla(0, 0%, 100%, 1);
+  opacity: 1;
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 28px;
+  font-family: "SF Pro Text",Medium;
+  padding: 13px 109px;
+}
+
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.img {
+  display: block;
+}
+
+.best-seller img {
+  max-width: 550px;
+  object-fit: cover;
+}
+
+.fz-40 {
+  font-size: 40px;
 }
