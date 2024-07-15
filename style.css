@@ -171,6 +171,11 @@ nav {
   display: flex;
 }
 
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -247,12 +252,36 @@ nav ul {
   display: block;
 }
 
+.best-seller {
+  margin-top: 60px;
+}
+
 .best-seller img {
-  max-width: 550px;
+  max-width: calc(50%);
   object-fit: cover;
 }
 
 
+.best-seller_text {
+  max-width:350px;
+  margin: auto auto;
+}
+
+.best-seller p {
+  font-size: 20px;
+}
+
+.best-seller span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color:#AC8A46;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
 .fz-40 {
   font-size: 40px;
 }
