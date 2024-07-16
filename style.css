@@ -154,6 +154,27 @@ img {
   vertical-align: middle;
 }
 
+button {
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.1s;
+  border: 2px solid transparent;
+}
+
+button:hover {
+  background-color: rgb(246, 202, 119);
+}
+
+button:active {
+  border-color: #e0e0e0;
+  transform: scale(0.95);
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: #e0e0e0;
+}
 
 .flex {
   display: flex;
@@ -217,8 +238,7 @@ nav ul {
   height: 100%;
 }
 
-.intro-img,
-footer-img {
+.intro-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -305,15 +325,19 @@ h2 {
   padding: 18px 53px 18px 51px;
 }
 
-h3,
-h4 {
+h3 {
   font-size: 24px;
   font-weight: 600;
 }
 
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #8d8d8d;
+}
+
 .series {
   background-color: #e0e0e0;
-  opacity: 1;
 }
 
 .series-list {
@@ -323,6 +347,33 @@ h4 {
 
 .series_list-item {
   max-width: 350px;
+}
+
+.sold_out-item {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sold-out::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.sold-out::after {
+  content: "Sold out";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 2;
 }
 
 .series-list span {
@@ -355,9 +406,8 @@ h5 {
 }
 
 h6 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
-  color: #8d8d8d;
 }
 
 .newsletter-container {
@@ -407,7 +457,8 @@ h6 {
 
 .footer-navbar {
   background-color: #ac8a46;
-  color: #FFFFFF;
+  color: #ffffff;
+  padding: 21px 0px 21px 0px;
 }
 
 .footer_navbar-container {
@@ -446,4 +497,3 @@ h6 {
 .mt-60 {
   margin-top: 60px;
 }
-
