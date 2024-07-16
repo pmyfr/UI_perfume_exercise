@@ -260,7 +260,6 @@ nav ul {
 
 .best-seller span {
   display: block;
-  font-size: 16px;
   font-weight: 600;
   color: #ac8a46;
 }
@@ -302,8 +301,7 @@ h2 {
   padding: 18px 53px 18px 51px;
 }
 
-
-h4 {
+h3, h4 {
   font-size: 24px;
   font-weight: 600;
   color: #000000;
@@ -311,19 +309,68 @@ h4 {
 
 .series {
   background-color: #E0E0E0;
+  opacity: 1;
 }
 
-.series-list li {
-  
+.series-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.series-list_item {
+  max-width: 350px;
+
+}
+
+.series-list span {
+  margin-left: 8px;
+  color:#8D8D8D;
+  text-decoration-line: line-through;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.opacity {
+  opacity: 0.3;
+}
+
+h5 {
+  font-size: 32px;
+}
+
+.recycle-info {
+  display: flex;
+  gap: 30px;
+}
+
+.recycle-image {
+  max-width: 730px;
+
+}
+
+.recycle-text {
+  flex-grow: 1;
+}
+
+/* .fz-16 {
+  font-size: 16px;
+} */
+
+.fz-20 {
+  font-size: 20px;
 }
 
 .fz-40 {
   font-size: 40px;
 }
 
-.fz-20 {
-  font-size: 20px;
+.mb-16 {
+  margin-bottom: 16px;
 }
+
 
 .mb-52 {
   margin-bottom: 52px;
