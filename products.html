@@ -29,20 +29,35 @@
               log in</a
             >
           </li>
+          <li class="nav-item fz-20 lg-d-none">
+            <a href="#">
+              <span class="material-symbols-outlined color-grey">person</span>
+              Blog</a
+            >
+          </li>
+          <li class="nav-item fz-20 lg-d-none">
+            <a href="#">
+              <span class="material-symbols-outlined color-grey">person</span>
+              Contact</a
+            >
+          </li>
           <li class="nav-item fz-20">
             <a href="#">
               <span class="material-symbols-outlined color-grey">favorite</span>
               Wishlist</a
             >
           </li>
-          <li class="nav-item fz-20">
+          <li class="nav-item fz-20 sm-d-none">
             <a href="#">
-              <span class="material-symbols-outlined color-grey"
+              <span class="material-symbols-outlined color-grey sm-d-none"
                 >shopping_cart</span
               >Cart(3)</a
             >
           </li>
         </ul>
+        <button class="burger-menu-toggler">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
       </nav>
       <div class="brand-category">
         <ul class="container flex">
@@ -112,6 +127,7 @@
             <h3>Poppy & Barley</h3>
             <p>Jo Malone</p>
             <p>NT$1,380</p>
+            <span class="deleted-line ml-8 rwd-toggle">NT$1,580</span>
             <div class="choose-product">
               <a href="#">
                 <span class="material-symbols-outlined">favorite</span>
@@ -361,5 +377,16 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      const burgerMenuToggler = document.querySelector('.burger-menu-toggler');
+      const navItems = document.querySelector('.nav-items');
+
+      burgerMenuToggler.addEventListener('click', function(){
+        navItems.classList.toggle('active');
+        console.log("success");
+      })
+
+    </script>
   </body>
 </html>

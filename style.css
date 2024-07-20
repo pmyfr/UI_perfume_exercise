@@ -145,9 +145,6 @@ body {
 
 .material-symbols-outlined {
   color: #916019;
-  /* font-size: 20px; */
-  /* max-width: 20px;
-  max-height: 20px; */
   font-variation-settings:
     "FILL" 1,
     "wght" 400,
@@ -240,6 +237,15 @@ nav ul {
 .nav-item a {
   display: flex;
   align-items: center;
+}
+
+.burger-menu-toggler {
+  display: none;
+  cursor: pointer;
+}
+
+.lg-d-none {
+  display: none;
 }
 
 .shop-introduction {
@@ -604,9 +610,47 @@ h6 {
     overflow: hidden;
   }
 
+  .burger-menu-toggler {
+    display: inline-block;
+    background-color: transparent;
+  }
+
   .nav-items,
   .brand-category,
   .footer_navbar-links {
+    display: none;
+  }
+
+  .nav-items.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #707070;
+    z-index: 1;
+  }
+
+  .nav-items.active li {
+    border: solid 1px #ffffff;
+    padding: 16px 0;
+  }
+
+  .nav-items.active .nav-item a {
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-items.active .nav-item span {
+    display: none;
+  }
+
+  .nav-items.active .lg-d-none {
+    display: flex;
+  }
+
+  .nav-items.active .sm-d-none {
     display: none;
   }
 
