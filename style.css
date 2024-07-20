@@ -225,7 +225,6 @@ nav {
 nav ul {
   list-style-type: none;
   display: flex;
-  /* gap: 32px; */
 }
 
 .nav-item {
@@ -308,10 +307,11 @@ nav ul {
   margin: auto auto;
 }
 
-.best-seller span {
+.bestseller span {
   display: block;
   font-weight: 600;
   color: #ac8a46;
+  margin-top: 16px;
 }
 
 h2 {
@@ -631,7 +631,7 @@ h6 {
     left: 0px;
     width: 100%;
     background-color: #707070;
-    z-index: 1;
+    z-index: 100;
   }
 
   .nav-items.active li {
@@ -687,6 +687,63 @@ h6 {
     align-items: center;
     font-weight: bold;
   }
+  
+  .shop-introduction {
+      height: auto;
+    }
+
+  .introduction-container {
+    height: 480px;
+  }
+  .intro-description {
+    right: 0%;
+  }
+
+  .intro-description h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .intro-description p {
+    font-size: 20px;
+  }
+
+  .shop-button {
+    font-size: 28px;
+    padding: 13px 101px;
+  }
+
+  .flex-reverse {
+    flex-direction: column;
+  }
+
+  .sm-flex-col {
+    flex-direction: column;
+  }
+
+  .bestseller {
+    margin-top: 40px;
+  }
+
+  .bestseller ul {
+    padding: 0 14.5px;
+  }
+
+  .bestseller ul li{
+    margin-bottom: 32px;
+  }
+
+
+  .bestseller img {
+    max-width: 100%;
+  }
+  
+  .bestseller span {
+    margin-top: 8px;
+  }
+
+
+  /* Proudcts.html */
 
   .product-list {
     gap: 15px;
