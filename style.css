@@ -239,7 +239,7 @@ nav ul {
   align-items: center;
 }
 
-.burger-menu-toggler {
+.burger-menu-toggler, .sm-d-cart {
   display: none;
   cursor: pointer;
 }
@@ -610,7 +610,7 @@ h6 {
     overflow: hidden;
   }
 
-  .burger-menu-toggler {
+  .burger-menu-toggler, .sm-d-cart {
     display: inline-block;
     background-color: transparent;
   }
@@ -652,6 +652,28 @@ h6 {
 
   .nav-items.active .sm-d-none {
     display: none;
+  }
+
+  .sm-d-cart {
+    position: relative;
+    display: inline-block;
+  }
+
+  .sm-d-cart::after {
+    content: "3";
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    background-color: #916000;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
   }
 
   .product-list {

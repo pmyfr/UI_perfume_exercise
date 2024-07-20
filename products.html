@@ -55,9 +55,18 @@
             >
           </li>
         </ul>
-        <button class="burger-menu-toggler">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
+        <div>
+          <button class="sm-d-cart">
+            <a href="#">
+              <span class="material-symbols-outlined color-grey"
+                >shopping_cart</span
+              ></a
+            >
+          </button>
+          <button class="burger-menu-toggler">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
       </nav>
       <div class="brand-category">
         <ul class="container flex">
@@ -379,14 +388,13 @@
     </div>
 
     <script>
-      const burgerMenuToggler = document.querySelector('.burger-menu-toggler');
-      const navItems = document.querySelector('.nav-items');
+      const burgerMenuToggler = document.querySelector(".burger-menu-toggler");
+      const navItems = document.querySelector(".nav-items");
 
-      burgerMenuToggler.addEventListener('click', function(){
-        navItems.classList.toggle('active');
+      burgerMenuToggler.addEventListener("click", function () {
+        navItems.classList.toggle("active");
         console.log("success");
-      })
-
+      });
     </script>
   </body>
 </html>
