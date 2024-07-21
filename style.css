@@ -606,9 +606,10 @@ h6 {
 }
 
 @media screen and (max-width: 375px) {
-  .wrap {
+  .wrap, nav{
     max-width: 100%;
     margin: 0 auto;
+    padding: 0px 15px;
     overflow: hidden;
   }
 
@@ -710,7 +711,7 @@ h6 {
 
   .shop-button {
     font-size: 28px;
-    padding: 13px 101px;
+    padding: 13px 80px;
   }
 
   .flex-reverse {
@@ -723,10 +724,6 @@ h6 {
 
   .bestseller {
     margin-top: 40px;
-  }
-
-  .bestseller ul {
-    padding: 0 14.5px;
   }
 
   .bestseller ul li{
@@ -742,6 +739,61 @@ h6 {
     margin-top: 8px;
   }
 
+  .maintenance-training {
+    flex-direction: column;
+  }
+
+  .training-banner {
+    max-width: 100%;
+  }
+
+  .training-list {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .training-list li {
+    margin-bottom: 20px;
+  }
+
+  .training-button {
+    margin-top: 0px;
+  }
+
+  .training-button a {
+    padding: 18px 50px;
+  }
+
+  .series {
+    margin-top: 40px;
+  }
+
+  .series-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .series_list-item {
+    padding-top: 32px;
+  }
+
+  .series_list-item img{
+    max-width: 345px;
+  }
+
+  .recycle-info {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .recycle-image {
+   height: 520px;
+   object-fit: cover;
+  }
+
+  .newsletter {
+    width: 100vw;
+  }
 
   /* Proudcts.html */
 
