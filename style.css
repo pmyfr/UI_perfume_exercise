@@ -352,6 +352,7 @@ h2 {
 h3 {
   font-size: 24px;
   font-weight: 600;
+  margin-top: 8px;
 }
 
 h4 {
@@ -367,6 +368,7 @@ h4 {
 .series-list {
   display: flex;
   justify-content: space-between;
+  padding: 40px 0px;
 }
 
 .series_list-item {
@@ -676,7 +678,7 @@ h6 {
   .sm-d-cart::after {
     content: "3";
     position: absolute;
-    top: -6px;
+    top: -3px;
     right: 0px;
     background-color: #916000;
     color: #ffffff;
@@ -688,6 +690,7 @@ h6 {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+
   }
 
   .shop-introduction {
@@ -771,24 +774,39 @@ h6 {
   .series-list {
     flex-direction: column;
     align-items: center;
-  }
-
-  .series_list-item {
-    padding-top: 32px;
+    gap: 32px;
+    padding: 32px 0px 36px 0px; 
   }
 
   .series_list-item img {
-    max-width: 345px;
+    height: 350px;
+    width: 344px;
+
+    object-position: center;
+  }
+
+  .sm-mt-8 {
+    margin-top: 8px;
+  }
+
+  .sm-mb-4 {
+    margin-bottom: 4px;
   }
 
   .recycle-info {
     flex-direction: column;
     margin-top: 40px;
+    gap: 8px;
   }
 
   .recycle-image {
     height: 520px;
     object-fit: cover;
+  }
+
+  .recycle-text p {
+    text-align: left;
+    margin-bottom: 8px;
   }
 
   .newsletter {
